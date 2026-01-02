@@ -1,0 +1,15 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; color: #333; margin: 0; display: flex; justify-content: center; padding: 40px; }
+.container { width: 100%; max-width: 900px; }
+.input-group { display: flex; gap: 10px; margin-bottom: 30px; }
+input { flex: 1; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-size: 16px; }
+button { padding: 12px 24px; background: #0070f3; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+button:hover { background: #0056b3; }
+
+.dashboard { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.status-panel, .result-panel { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); height: 400px; overflow-y: auto; }
+
+.console { background: #1e1e1e; color: #00ff00; font-family: 'Courier New', monospace; padding: 15px; border-radius: 4px; height: 300px; font-size: 13px; line-height: 1.5; }
+.log-item { margin-bottom: 5px; border-left: 2px solid #00ff00; padding-left: 8px; }
+
+.data-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
+.label { font-weight: bold; color: #666; }

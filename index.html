@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISBN Data Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Metadata Extractor</h1>
+        <div class="input-group">
+            <input type="text" id="isbnInput" placeholder="Enter 13-digit ISBN (e.g. 9780753555194)">
+            <button onclick="startAutomation()">Fetch Data</button>
+        </div>
+
+        <div class="dashboard">
+            <div class="status-panel">
+                <h3>Automation Status</h3>
+                <div id="console" class="console">
+                    <p class="idle">> Waiting for input...</p>
+                </div>
+            </div>
+
+            <div class="result-panel" id="resultCard">
+                <h3>Final Output</h3>
+                <div id="outputContent">
+                    <p class="placeholder-text">Data will appear here once the process completes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
