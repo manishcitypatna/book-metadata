@@ -22,7 +22,7 @@ async function startAutomation() {
         addLog(`Initiating request for ISBN: ${isbn}`);
         addLog("Connecting to n8n workflow...");
         
-        const response = await fetch('https://n8n-latest-n8n.07cmzp.easypanel.host/webhook/fetch-book-data', {
+        const response = await fetch('https://n8n-latest-n8n.07cmzp.easypanel.host/webhook-test/fetch-book-data', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ isbn: isbn })
